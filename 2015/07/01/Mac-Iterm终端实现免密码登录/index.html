@@ -188,22 +188,22 @@
 <h4 id="如何利用SSH-COPY-ID实现免密码登录">如何利用SSH-COPY-ID实现免密码登录</h4><h2 id="<!-_more_->"><a id="more"></a></h2><ul>
 <li>安装SSH-COPY-ID</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install ssh-copy-id</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install ssh-copy-id</span><br></pre></td></tr></table></figure>
 <p><em>连点三个回车,安装完成,So Easy !!!</em></p>
 <ul>
 <li>生成私钥和公钥</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 1024</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b <span class="number">1024</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>将公钥上传到服务器, <strong>会上传到(~/.ssh/authorized_keys)</strong></li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-copy-id user@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-copy-id user@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
 <p>现在 <code>ssh user@xxx.xxx.xxx.xxx</code> 下试试,是不是密码不见了?哈哈哈</p>
 <p><strong><em>One More Thing</em></strong></p>
 <p>有可能在执行第三步上传公钥的时候会报如下错误</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ssh-copy-id: ERROR: No identities found</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ssh-copy-id: ERROR: No identities found</span><br></pre></td></tr></table></figure>
 <p>需要指定下公钥的目录,利用以下命令来操作</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-copy-id -i ~/.ssh/id_dsa.pub user@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-copy-id -i ~/.ssh/id_dsa.pub user@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
 <hr>
 <p><img src="http://7xjybv.com1.z0.glb.clouddn.com/IMG_0434.JPG" alt="题图"></p>
 

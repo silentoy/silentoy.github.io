@@ -20,7 +20,7 @@
 
 
 
-  <meta name="keywords" content="GTD,Mac,工具," />
+  <meta name="keywords" content="PHP,安全," />
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-  <title> 推荐几个工作上用起来很顺手提高效率的工具 // Moment By Silentoy® </title>
+  <title> 谈谈用户系统安全的那点事儿 // Moment By Silentoy® </title>
 </head>
 
 <body>
@@ -138,7 +138,7 @@
           
           
             
-              推荐几个工作上用起来很顺手提高效率的工具
+              谈谈用户系统安全的那点事儿
             
           
         </h1>
@@ -146,14 +146,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2014-01-29
+          发表于 2014-07-08
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/categories/技巧分享/">技巧分享</a>
+              <a href="/categories/技术分享/">技术分享</a>
 
               
               
@@ -166,8 +166,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2014/01/29/推荐几个工作上用起来很顺手提高效率的工具/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2014/01/29/推荐几个工作上用起来很顺手提高效率的工具/"></span>
+            <a href="/2014/07/08/谈谈用户系统安全的那点事儿/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2014/07/08/谈谈用户系统安全的那点事儿/"></span>
             </a>
           </span>
           
@@ -181,21 +181,14 @@
       
 
       
-        <p><em>2014年1月29日 农历腊月二十九</em></p>
-<p>作为蛇年的最后一个工作日,做个总结,整理下思绪,应该是今天最应景的事情了.<br>在过去的一年里,时间对于我来说,越来越显得那么可贵,尤其是有了儿子之后,如果利用有效的时间来更高效的完成工作,就直接决定了我有多少陪儿子的时间.所以今天把这段时间,用的比较不错的工具推荐给大家,合理的利用这些工具,可以有效的提高大家的工作效率和幸福感…</p>
-<a id="more"></a>
-<h3 id="Doit-im">Doit.im</h3><p>算是用过最好的GTD工具,mac版现在收费了,一个月10元,不过这比一个月花10块钱充黄钻靠谱多了</p>
-<p>随着工作量的增加,需求也越来越杂乱.经常会有需求在rtx一闪而过,被后面更多的需求掩埋了,结果第二天,需求人说咋还没处理呢..呃.这个不好..通过这个工具,随手的记下需要处理的需求,很方便,还有快捷键添加.而且每天会在早上9点半提醒你整理今天的计划,下午6点半提醒回顾今天的工作.当然,更重要的是在手机端,一样可以方便的使用它</p>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/Cg-4jVLoWOyIUokqAAMhMpbWCvoAAE4wAIHHpkAAyFK599.png" alt="doit.im1"></p>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/Cg-4jlLoWR2Idg-jAADmAyL5o7YAAE4wQM_Cx8AAOYb163.jpg" alt="doit.im2"></p>
-<h3 id="Alfred">Alfred</h3><p>快捷启动工具,键盘党的利器.可以快速定位到你所需要启动的应用和文件,更强大的在于,它可以快速的的搜索文件,包括文件内容内搜索,实在是强大的可怕..</p>
-<p>这还不够,只所以一直用着这个工具,是因为它提供workflows功能,在这里面,你可以通过简单的开发就可以实现非常炫目的功能,比如前一段时间,花半个小时,整理了一个可以快速查询php手册的插件,并且网上会提供大量的各式各样的插件,如何有了它.你的工作效率那得嗖嗖的啊..</p>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/Cg-4jVLoWTOIcxVaAADqILXWkGcAAE4wgG3dqoAAOo4380.png" alt="alfred1"></p>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/Cg-4jlLoWTqIFJoJAAEvV_c-MKMAAE4wgJgrKsAAS9v116.png" alt="alfred2"></p>
-<h3 id="GoAgent">GoAgent</h3><p>google党和翻墙堂的必备佳软.前提是需要用google帐号申请一个或者几个Google Appengine的appID,当然这个是免费的.之后通过简单的配置,就可以方便的进出墙内墙外了..从此生活幸福感飙升哈.</p>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/Cg-4jlLoWU-IctnJAAFWa2B0BuUAAE4wwCIhWYAAVaD832.png" alt="goagent"></p>
+        <p>入职ZOL已经有36个月了,一直在负责ZOL全站用户系统,期间针对于zol的用户体系安全做过一些升级也,一直没有时间来整理,最近有些业务在做登录注册,也有人问到如何做登录注册的安全,正好趁这个机会好好总结总结,分享给需要的同学们…</p>
+<h3 id="明文密码不可要">明文密码不可要</h3><p>针对于明文密码的问题,很多公司为了方便,一直在数据库里默默的保存的用户的明文密码,直到在2012年各大互联网公司纷纷爆出数据库被爆,明文密码再一次被推到风口浪尖,所以再次重申,我们的用户库全是密文保存,不会有用户的原文密码,这也是最起码的安全常识了</p>
+<h3 id="setcookie添加http_only属性">setcookie添加http_only属性</h3><p>现在用户登录大多采用记录cookie的形式,主要是方便和技术相对成熟,当然问题也就相对较多,比如通过xss或者钓鱼轻易的获得用户的cookie信息,从而利用cookie直接以用户的身份登录,从而达到获得别人找好的目的.这也是目前获取帐号最多的一直形式,其实我们只要通过设置cookie时一个简单的数据http_only便可以防止通过JS获取cookie中的信息,从而进一步保障帐号安全</p>
+<h3 id="密码前端加密">密码前端加密</h3><p>还有一种比较常用的获取密码的形式,就是通过抓包的形式,拦截用户登录提交的请求,从而获得用户密码,针对这种情况,我们采用了前端加密的方式,在用户提交表单之前,对用户的密码用javascript进行加密,从而防止被抓包的获取的密码直接的暴露出来</p>
+<h3 id="后端加密方式升级">后端加密方式升级</h3><p>这个是针对于后端用户密码的加密,通过采用的方式是md5或者密码+密钥再进行md5,但随着md5密码库的不断扩充,通过暴力破解,md5的加密形式显然已经不再安全,对着这种情况,我们在去年对zol全站用户密码的加密方式进行升级,采用了破解难度更高的crypt加密,保守计算比md5加密的破解时间提升1000倍以上</p>
+<h3 id="结语">结语</h3><p>当然,我们的用户安全防御还有很多点,这里只是总结了最主要的几个点,其他的包括登录的cookie验证的应用,用户登录IP异常的验证等等,但是也不可否认,我们的安全防御还比较简单,后期需要优化的地方还很多</p>
 <hr>
-<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/IMG_0507.JPG" alt="题图"></p>
+<p><img src="http://7xjybv.com1.z0.glb.clouddn.com/475130E158D9EF54391A4B8074F67DE0.png" alt="题图"></p>
 
       
     </div>
@@ -204,11 +197,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/GTD/"> #GTD </a>
+            <a href="/tags/PHP/"> #PHP </a>
           
-            <a href="/tags/Mac/"> #Mac </a>
-          
-            <a href="/tags/工具/"> #工具 </a>
+            <a href="/tags/安全/"> #安全 </a>
           
         </div>
       
@@ -217,11 +208,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2014/07/08/谈谈用户系统安全的那点事儿/">谈谈用户系统安全的那点事儿</a>
+              <a href="/2015/06/25/Github-Hexo博客系统的搭建/">Github + Hexo博客系统的搭建</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/01/29/推荐几个工作上用起来很顺手提高效率的工具/">推荐几个工作上用起来很顺手提高效率的工具</a>
             
           </div>
         </div>
@@ -239,8 +232,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2014/01/29/推荐几个工作上用起来很顺手提高效率的工具/"
-               data-title="推荐几个工作上用起来很顺手提高效率的工具" data-url="http://yoursite.com/2014/01/29/推荐几个工作上用起来很顺手提高效率的工具/">
+          <div class="ds-thread" data-thread-key="2014/07/08/谈谈用户系统安全的那点事儿/"
+               data-title="谈谈用户系统安全的那点事儿" data-url="http://yoursite.com/2014/07/08/谈谈用户系统安全的那点事儿/">
           </div>
         
       </div>
@@ -343,7 +336,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Doit-im"><span class="nav-number">1.</span> <span class="nav-text">Doit.im</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Alfred"><span class="nav-number">2.</span> <span class="nav-text">Alfred</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GoAgent"><span class="nav-number">3.</span> <span class="nav-text">GoAgent</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#明文密码不可要"><span class="nav-number">1.</span> <span class="nav-text">明文密码不可要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setcookie添加http_only属性"><span class="nav-number">2.</span> <span class="nav-text">setcookie添加http_only属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#密码前端加密"><span class="nav-number">3.</span> <span class="nav-text">密码前端加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后端加密方式升级"><span class="nav-number">4.</span> <span class="nav-text">后端加密方式升级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">5.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
